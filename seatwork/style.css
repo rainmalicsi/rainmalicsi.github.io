@@ -1,36 +1,18 @@
 body {
     background-color: #3F403F;
     color: #E6E8E6;
-    font-family: Helvetica;
-  }
-  
-  h1 {
-    font-family: Garamond;
+    font-family: Luciole, 'Source Sans Pro', Futura, sans-serif;
+}
+
+h1 {
+    text-shadow: 2px 2px 8px;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, serif;
+}
+
+sup {
     color: #9FB8AD;
-  }
-  
-  
-  h2 {
-    font-family: Garamond;
-    color: #9FB8AD;
-  }
-  
-  h3 {
-    font-family: Garamond;
-    color: #9FB8AD;
-  }
-  
-  h4 {
-    font-family: Garamond;
-    color: #9FB8AD;
-  }
-  
-  h5 {
-    font-family: Garamond;
-    color: #9FB8AD;
-  }
-  
-  h6 {
-    font-family: Garamond;
-    color: #9FB8AD;
-  }
+}
+
+div {
+    padding: 5px;
+}
