@@ -2,17 +2,18 @@ body {
     background-color: #3F403F;
     color: #E6E8E6;
     font-family: Luciole, 'Source Sans Pro', Futura, sans-serif;
-}
-
-h1 {
+  }
+  
+  h1 {
     text-shadow: 2px 2px 8px;
-    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, serif;
-}
-
-sup {
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    
+  }
+  
+  sup {
     color: #9FB8AD;
-}
-
-div {
+  }
+  
+  div {
     padding: 5px;
-}
+  }
