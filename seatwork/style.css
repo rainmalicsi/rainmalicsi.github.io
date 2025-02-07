@@ -1,21 +1,18 @@
   p {
     color: #E6E8E6;
     font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    line-height: 2;
   }
   
   body {
     background-color: #3F403F;
   }
 
-  blockquote {
-    line-height: 2;
-    
-  }
-
   h1 {
     text-shadow: 2px 2px 20px;
     font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
     color: #9FB8AD;
+
   }
 
   h2 {
@@ -23,14 +20,15 @@
     font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
     color: #9FB8AD;
     font-style: italic;
+    background: #475841;
+    padding: 5px;
   }
   
   sup {
     color: #9FB8AD;
+    font-style: italic;
   }
   
   div {
-    padding: 10px;
-    line-height: 30px;
-
+    padding: 5px;
 }
