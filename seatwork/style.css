@@ -16,10 +16,11 @@
 
   h2 {
     text-shadow: 2px 2px 30px;
+    text-decoration: underline;
     font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
     color: #9FB8AD;
     font-style: italic;
-    background-color: #475841;
+    background: #475841;
     padding: 5px;
   }
   
