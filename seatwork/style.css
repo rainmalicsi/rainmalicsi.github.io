@@ -1,11 +1,15 @@
-body {
-    background-color: #3F403F;
+  p {
     color: #E6E8E6;
     font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+  }
+  
+  body {
+    background-color: #3F403F;
   }
 
   blockquote {
     line-height: 2;
+    
   }
 
   h1 {
@@ -26,5 +30,7 @@ body {
   }
   
   div {
-    padding: 5px;
-  }
+    padding: 10px;
+    line-height: 30px;
+
+}
