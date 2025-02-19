@@ -15,7 +15,7 @@ h2 {
     color: #9FB8AD;
     background-color: #475841;
     padding: 10px;
-    box-shadow: 5px 5px 5px #475841;
+    box-shadow: 5px 5px 5px;
 }
 
 p {

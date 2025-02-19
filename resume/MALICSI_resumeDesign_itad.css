@@ -1,0 +1,48 @@
+h1 {
+    color: #9FB8AD; 
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    margin-left: 100px;
+    color: #9FB8AD;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    text-shadow: 2px 2px 20px;
+}
+
+
+h3{
+    color: #9FB8AD;
+    text-transform: uppercase;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    text-shadow: 2px 2px 20px;
+    margin-left: 100px;
+    
+}
+
+body{
+
+    background-color: #3F403F;
+}
+
+
+li {
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    color: #E6E8E6;
+    line-height: 21px;
+    word-spacing: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+p {
+    text-align: center;
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    color: #E6E8E6;
+    line-height: 21px;
+    word-spacing: 3px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
