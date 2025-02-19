@@ -2,10 +2,32 @@ body {
     background-color: #3F403F;
 }
 
+h1 {
+    text-align: center;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    color: #9FB8AD;
+    text-shadow: 2px 2px 20px;
+}
+
 h2 {
     text-align: center;
     font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
     color: #9FB8AD;
-    background-color: E6E8E6;
+    background-color: #475841;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #475841;
 }
 
+p {
+    text-align: justify;
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    background-color: #9FB8AD;
+    color: #E6E8E6;
+    padding: 5px;
+    line-height: 2;
+    
+}
+
+div {
+    background-color: #9FB8AD;
+}
