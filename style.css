@@ -1,0 +1,60 @@
+body {
+    background-color: #3F403F;
+}
+
+.header {
+    background-color: #475841;
+    color: #9FB8A1;
+    padding: 5px 20px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex; /* Makes the children flex items */
+    align-items: center;
+}
+
+.header h1 {
+    margin-right: 10px; /* Adds some space between the heading and paragraph */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.header p {
+    margin: 0;
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    color: #E6E8E6;
+}
+
+.home {
+    display: flex; /* ADDED THIS LINE */
+    align-items: flex-start; /* ADDED THIS LINE */
+}
+
+.text-container { /* Added this style */
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    color: #E6E8E6;
+    padding-right: 20px;
+    text-align: justify;
+    margin-top: 5px;
+    width: 50%; /* Set width to 50% of its parent's width */
+    max-width: 600px; /*optional, set a max width so it does not get too wide on very large screens*/
+    padding-left: 30px;
+    margin-left: 21px;
+}
+
+.home h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #9FB8A1;
+    font-weight: bold;
+    font-size: 90px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.side-image {
+    width: 800px;
+    height: auto;
+    position: fixed; /* Make the image fixed */
+    right: 0; /* Align to the right edge */
+    top: 150px; /*optional, adjust vertical position */
+}
