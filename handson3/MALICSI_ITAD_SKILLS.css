@@ -1,3 +1,10 @@
+.rubik-<uniquifier> {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+
 body {
     background-color: #3F403F;
 }
@@ -18,16 +25,96 @@ h2 {
     box-shadow: 5px 5px 5px;
 }
 
-p {
+
+.iso blockquote p {
     text-align: justify;
-    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
-    background-color: #9FB8AD;
+    font-family: Rubik;
     color: #E6E8E6;
     padding: 5px;
     line-height: 2;
-    
 }
 
-div {
-    background-color: #9FB8AD;
+.iso p {
+    padding: 5px;
 }
+
+.child {
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+}
+    
+
+.shorts {
+    background-color: #475841;
+  }
+  
+  .links {
+    padding: 1px;
+    border-radius: 8px;
+    margin: 0px 400px 0px 400px;
+    text-align: center;
+    background-color: #475841;
+  }
+  
+  .links a {
+    font-family: Rubik;
+  }
+  
+  .links h3 {
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    color: #9FB8AD;
+    font-size: 1.5em;
+  }
+  
+  .shortcut-link {
+    background-color: #9FB8AD;
+    color: #3F403F;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block; 
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .shortcut-link:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray
+  }
+  
+  .child a {
+    background: #9FB8AD;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+  }
+  
+  .top:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray 
+  }  
+
+  .home a {
+    background: #9FB8AD;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    font-size: 30px;
+    font-family: Rubik;
+  }
+  
+  .back:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray 
+  }
+
+  div {
+    padding: 5px;
+  }

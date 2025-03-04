@@ -24,6 +24,7 @@ body {
     margin-right: 10px; /* Adds some space between the heading and paragraph */
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
+    
 }
 
 .header p {
@@ -52,20 +53,22 @@ body {
 }
 
 .home h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Noto Serif';
     color: #9FB8A1;
     font-weight: bold;
     font-size: 90px;
     margin-left: 50px;
     margin-top: 120px;
+    text-shadow: 2px 2px 20px;
 }
 
 .side-image {
-    width: 800px;
+    width: 500px;
     height: auto;
     position: fixed; /* Make the image fixed */
     right: 0; /* Align to the right edge */
     top: 150px; /*optional, adjust vertical position */
+    padding-right: 80px;
 }
 
 .footer {
@@ -77,4 +80,18 @@ body {
 
 .footer p {
     margin-left: 20px;
+    justify-content: space-between;
+    display: flex; /* Makes the children flex items */
+    align-items: center;
 }
+
+
+.noto-serif-<uniquifier> {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  

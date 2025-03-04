@@ -46,3 +46,29 @@ p {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+.child {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.child p {
+    display: inline-block; /* Make paragraphs inline blocks */
+    margin: 5px; /* Add spacing between buttons */
+}
+
+.child a {
+    background: #9FB8AD;
+    color: #3F403F;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.child a:hover {
+    background: #8FA89D;
+}
+
