@@ -16,21 +16,35 @@ body {
     text-align: center;
     font-weight: bold;
     justify-content: space-between;
-    display: flex; /* Makes the children flex items */
+    display: flex;
     align-items: center;
 }
 
 .header h1 {
-    margin-right: 10px; /* Adds some space between the heading and paragraph */
+    margin-right: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
-    
 }
 
 .header p {
     margin: 0;
     font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
     color: #E6E8E6;
+}
+
+.header-button {
+    background-color: #9FB8A1; /* Button background color */
+    color: #475841; /* Button text color */
+    padding: 8px 15px; /* Button padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 5px; /* Add spacing between buttons */
+    display: inline-block; /* Allows padding and margin */
+    transition: background-color 0.3s ease; /* smooth transition */
+}
+
+.header-button:hover {
+    background-color: #8FA89D; /* Darker background on hover */
 }
 
 .home {
@@ -85,6 +99,21 @@ body {
     align-items: center;
 }
 
+.footer a {
+    color: #9FB8A1;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-button {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #3F403F;
+}
 
 .noto-serif-<uniquifier> {
     font-family: "Noto Serif", serif;
