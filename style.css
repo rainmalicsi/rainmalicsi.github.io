@@ -21,7 +21,7 @@ body {
 }
 
 .header h1 {
-    margin-right: 10px;
+    margin-right: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
 }
@@ -36,15 +36,13 @@ body {
     background-color: #9FB8A1; /* Button background color */
     color: #475841; /* Button text color */
     padding: 8px 15px; /* Button padding */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    margin: 0 5px; /* Add spacing between buttons */
-    display: inline-block; /* Allows padding and margin */
-    transition: background-color 0.3s ease; /* smooth transition */
+    text-decoration: none; 
+    border-radius: 5px; 
+    margin: 0 20px;
 }
 
 .header-button:hover {
-    background-color: #8FA89D; /* Darker background on hover */
+    background-color: #8FA89D; 
 }
 
 .home {
@@ -61,8 +59,8 @@ body {
     margin-top: 5px;
     width: 50%; /* Set width to 50% of its parent's width */
     max-width: 600px; /*optional, set a max width so it does not get too wide on very large screens*/
-    padding-left: 30px;
-    margin-left: 21px;
+    padding-left: 50px;
+    margin-left: 90px;
     margin-top: -30px;
 }
 
@@ -71,17 +69,17 @@ body {
     color: #9FB8A1;
     font-weight: bold;
     font-size: 90px;
-    margin-left: 50px;
+    padding-left: 50px;
+    margin-left: 90px;
     margin-top: 120px;
     text-shadow: 2px 2px 20px;
 }
 
 .side-image {
     width: 500px;
-    height: auto;
     position: fixed; /* Make the image fixed */
     right: 0; /* Align to the right edge */
-    top: 150px; /*optional, adjust vertical position */
+    top: 135px; /*optional, adjust vertical position */
     padding-right: 80px;
 }
 
