@@ -57,8 +57,8 @@ body {
     padding-right: 20px;
     text-align: justify;
     margin-top: 5px;
-    width: 50%; /* Set width to 50% of its parent's width */
-    max-width: 600px; /*optional, set a max width so it does not get too wide on very large screens*/
+    width: 50%;
+    max-width: 600px; 
     padding-left: 50px;
     margin-left: 90px;
     margin-top: -30px;
@@ -102,15 +102,11 @@ body {
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
 
 .footer-button {
     text-decoration: none;
-}
-
-.footer a:visited {
-    color: #3F403F;
 }
 
 .noto-serif-<uniquifier> {
