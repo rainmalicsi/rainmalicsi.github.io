@@ -84,7 +84,7 @@
 }
 
 
-.child a {
+.gotop a {
   background: #9FB8AD;
   color: #3F403F; 
   padding: 10px 15px;
@@ -115,3 +115,47 @@
   box-shadow: 0 6px 12px gray 
 }
 
+.child {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.child:hover {
+  opacity: 1;
+}
+
+.teen {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.teen:hover {
+  opacity: 1;
+} 
+
+.adult {
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  opacity: 0.90;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adult:hover {
+  opacity: 1;
+}
