@@ -96,7 +96,7 @@
 
 .top:hover {
   background-color: #E6E8E6;
-  box-shadow: 0 6px 12px gray 
+  box-shadow: 0 6px 12px gray;
 }
 
 .home a {
@@ -107,12 +107,19 @@
   text-transform: uppercase;
   border-radius: 5px;
   box-shadow: 0 4px 8px;
-  font-size: 30px
+  font-size: 30px;
 }
 
 .back:hover {
   background-color: #E6E8E6;
-  box-shadow: 0 6px 12px gray 
+  box-shadow: 0 6px 12px gray; 
+}
+
+.home {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Optionally center items vertically if needed */
+  flex-wrap: wrap; /* allows images to wrap to the next line on smaller screens, if desired. */
 }
 
 .child {
@@ -121,9 +128,8 @@
   padding: 10px;
   opacity: 0.75;
   border-radius: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: inline-block;
+  text-align: center;
 }
 
 .child:hover {
