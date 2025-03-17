@@ -118,3 +118,75 @@ h2 {
   div {
     padding: 5px;
   }
+
+  .image-container {
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Optionally center items vertically if needed */
+    flex-wrap: wrap; /* allows images to wrap to the next line on smaller screens, if desired. */
+    gap: 40px;
+  }
+  
+  .skill {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    opacity: 0.75;
+    border-radius: 30px;
+    display: inline-block;
+    display: block; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 4px solid #9FB8AD; 
+  }
+  
+  .skill:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Added slight zoom on hover */
+    box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+    border: 4px solid #475841;
+    
+  }
+  
+  .hobby {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    opacity: 0.75;
+    border-radius: 30px;
+    display: inline-block;
+    display: block; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 4px solid #9FB8AD; 
+  }
+  
+  .hobby:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Added slight zoom on hover */
+    box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+    border: 4px solid #475841;
+  } 
+  
+  .interest {
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    opacity: 0.75;
+    border-radius: 30px;
+    display: inline-block;
+    display: block; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: 4px solid #9FB8AD; 
+  }
+  
+  .interest:hover {
+    opacity: 1;
+    transform: scale(1.05); /* Added slight zoom on hover */
+    box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+    border: 4px solid #475841;
+  }
