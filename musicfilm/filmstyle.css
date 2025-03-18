@@ -70,6 +70,12 @@ section h2 {
     height: 100%;
 }
 
+.media-item:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow for the zoom effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+}
+
 .topbtn a {
     background: #9FB8AD;
     color: #3F403F; 
