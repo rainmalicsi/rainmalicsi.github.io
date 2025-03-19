@@ -72,3 +72,18 @@ p {
     background: #8FA89D;
 }
 
+img {
+    width: 2in;
+    height: 2in;
+
+}
+
+header div img {
+    position: absolute;
+    top: 20px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    width: 2in;
+    height: 2in;
+    border-radius: 50%; /* Optional: Makes the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+}
