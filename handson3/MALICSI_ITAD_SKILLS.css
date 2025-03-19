@@ -41,6 +41,10 @@ h2 {
 .child {
     font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
 }
+
+img {
+  object-fit: cover;
+}
     
 
 .shorts {
