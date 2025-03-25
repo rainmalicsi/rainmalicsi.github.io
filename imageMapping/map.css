@@ -1,0 +1,75 @@
+html, body {
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #3F403F;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 5px auto;
+    padding: 20px;
+    background: #475841;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-container img {
+    width: auto; /* Or a specific width like 800px if you want it larger initially */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 800px; /* Increase the maximum width if needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Or cover, depending on your desired effect */
+}
+
+.header {
+    background-color: #475841;
+    color: #9FB8A1;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.header h1 {
+    margin-right: 20px;
+    font-family: 'Noto Serif';
+    text-align: left;
+}
+
+.header p {
+    margin: 0;
+    font-family: Luciole, 'Source Sans Pro', Futura, 'Gill Sans', Tahoma, Geneva, sans-serif;
+    color: #E6E8E6;
+}
+
+.header-button {
+    background-color: #9FB8A1;
+    color: #475841;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.header-button:hover {
+    background-color: #8FA89D;
+}

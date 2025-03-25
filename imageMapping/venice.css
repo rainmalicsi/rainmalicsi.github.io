@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Rubik;
+    line-height: 1.6;
+    background-color: #3f403f;
+    color: #e6e8e6;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1600px;
+    margin: 5px auto;
+    padding: 20px;
+    background: #475841;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Styling */
+.image-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.image-box img:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e6e8e6;
+}
+
+ h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e6e8e6;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #e6e8e6;
+}
+ul {
+    margin-left: 40px; /* Adds a 20px margin on all sides */
+  }
+
+
+
+  .places-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between the image boxes */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.place-item {
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden; /* Clip content that goes outside the border-radius */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 15px); /* Roughly one-third width with spacing */
+    min-width: 200px; /* Minimum width for smaller screens */
+    transition: transform 0.3s ease-in-out;
+}
+
+.place-item:hover {
+    transform: translateY(-5px);
+}
+
+.place-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain a consistent aspect ratio */
+    object-fit: cover; /* Cover the container, may crop */
+}
+
+.place-info {
+    background-color: #5e35b1; /* Purple background */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .places-grid {
+        gap: 10px;
+    }
+    .place-item {
+        width: calc(50% - 10px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .place-item {
+        width: 100%; /* One item per row on small screens */
+    }
+}
+
+
+
+
+
+
+.rubik-<uniquifier> {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
