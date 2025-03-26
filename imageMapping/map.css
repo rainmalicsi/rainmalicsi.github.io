@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+    padding: 20px;
     max-width: 1600px;
     margin: 5px auto;
     padding: 20px;
@@ -47,6 +48,7 @@ body {
     justify-content: space-between;
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .header h1 {
@@ -73,3 +75,4 @@ body {
 .header-button:hover {
     background-color: #8FA89D;
 }
+
