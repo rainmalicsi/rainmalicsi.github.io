@@ -16,7 +16,7 @@ body {
 
 /* Container */
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 5px auto;
     padding: 20px;
     background: #475841;
@@ -31,6 +31,10 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+.image-box a {
+    display: inline-block; /* Or inline-block, depending on desired spacing behavior */
+    max-width: 400px; /* Keep the max-width constraint */
 }
 
 .image-box img {
