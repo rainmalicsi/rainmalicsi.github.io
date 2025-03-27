@@ -1,0 +1,179 @@
+/* for font */
+
+.rubik-<uniquifier> {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  
+  .noto-serif-<uniquifier> {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+  }
+  
+/* for general styling */
+
+body {
+    background-color: #3F403F;
+    margin: 0;
+}
+
+
+.header {
+    background-color: #475841; /* Darker background for better contrast */
+    color: #9fb8ad;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+    margin-right: 20px;
+    font-family: 'Noto Serif', serif; /* Added fallback serif font */
+    text-align: left;
+    font-size: 1.8em; /* Slightly larger logo */
+    letter-spacing: 0.5px;
+}
+
+.header nav {
+    display: flex; /* Ensure buttons are in a row */
+    align-items: center; /* Vertically align buttons */
+}
+
+.header-button {
+    background-color: transparent; /* Transparent background for buttons */
+    color: #ddd;
+    font-family: 'Noto Serif', serif; /* Added fallback serif font */
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    border: 1px solid transparent; /* Add a transparent border for smoother hover */
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background on hover */
+    color: #fff;
+    border-color: #555; /* Subtle border on hover */
+}
+
+.header-button.current {
+    background-color: #5cb85c; /* Highlight color for the current page */
+    color: #fff;
+    border: none;
+}
+
+.header-button[data-page="film"] {
+    /* Distinct styles for Home on index.html */
+    background-color: #9fb8ad;
+    color: #3f403f;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.bucket-item, .bucket-item-left {
+    background-color: #3F403F; /* Match the body background */
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(88.88% - 30px);
+    box-shadow: 0 2px 10px rgba(101, 181, 100, 0.2); /* Adjust shadow for visibility */
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex; /* Keep the main container as a row */
+    align-items: center; /* Vertically align the image and the text container */
+    gap: 20px; /* Spacing between the image and the text container */
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Optional: Subtle border for definition */
+}
+
+.bucket-item p, .bucket-item-left p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+    font-family: Rubik;
+    text-align: justify;
+}
+
+.bucket-item h1, h2, h3, h4, h5, h6, .bucket-item-left h1, h2, h3, h4, h5, h6 {
+    font-size: 35px;
+    margin-top: 0;
+    font-family: 'Noto Serif';
+    color: #9fb8ad;
+    text-shadow: 2px 2px 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}   
+
+.bucket-item img, .bucket-item-left img {
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.gallery-item {
+    width: calc(79% - 80px);
+    position: relative; /* This is correct */
+    overflow: hidden;
+    border-radius: 5px;
+    border-style: double; /* Correct way to set the border style */
+    border-width: 10px; /* Separate property for border width */
+    border-color: #9fb8ad; /* Separate property for border color */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjust shadow for visibility */
+    object-fit: cover;
+}
+
+.gallery-item img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Keep this for general gallery */
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.bucket-item-text { /* New container for heading and paragraph */
+    display: flex;
+    flex-direction: column; /* Stack heading and paragraph vertically */
+    gap: 50px; /* Spacing between heading and paragraph */
+    color: #e6e8e6;
+}
