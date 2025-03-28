@@ -159,6 +159,7 @@ header {
     white-space: nowrap; /* Prevent wrapping */
     overflow-x: auto; /* Enable horizontal scrolling if needed */
     margin: 0;
+    width: 100%;
 }
 
 .logo {
