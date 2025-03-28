@@ -23,7 +23,7 @@ h3{
 }
 
 body{
-
+    margin: 0;
     background-color: #3F403F;
 }
 
@@ -88,70 +88,65 @@ header div img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
 }
 
+
 .header {
-    background-color: #475841; /* Darker background for better contrast */
+    background-color: #475841;
     color: #9fb8ad;
-    padding: 15px 20px;
+    padding: 10px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
 .logo {
     margin-right: 20px;
-    font-family: 'Noto Serif', serif; /* Added fallback serif font */
+    font-family: 'Noto Serif', serif;
     text-align: left;
-    font-size: 1.8em; /* Slightly larger logo */
+    font-size: 1.8em;
     letter-spacing: 0.5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header nav {
-    display: flex; /* Ensure buttons are in a row */
-    align-items: center; /* Vertically align buttons */
+    display: flex;
+    align-items: center;
 }
 
-
-
 .header-button {
-    background-color: transparent; /* Transparent background for buttons */
+    background-color: transparent;
     color: #ddd;
-    font-family: 'Noto Serif', serif; /* Added fallback serif font */
-    padding: 10px 18px;
+    font-family: Rubik;
+    padding: 10px 14px; /* Slightly reduced padding */
     text-decoration: none;
     border-radius: 5px;
-    margin: 0 10px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-    border: 1px solid transparent; /* Add a transparent border for smoother hover */
+    margin: 0 5px; /* Reduced margin */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 1px solid transparent;
+    white-space: nowrap; /* Prevent button text wrapping */
 }
 
 .header-button:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background on hover */
+    background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border-color: #555; /* Subtle border on hover */
+    border-color: #555;
 }
 
 .header-button.current {
-    background-color: #5cb85c; /* Highlight color for the current page */
+    background-color: #5cb85c;
     color: #fff;
     border: none;
 }
 
 .header-button[data-page="resume"] {
-    /* Distinct styles for Home on index.html */
     background-color: #9fb8ad;
     color: #3f403f;
 }
 
-.header-content {
-    display: flex;
-    align-items: center; /* Vertically align items */
-}
-
-.header-content h1, .header-content h3 {
-    margin-right: 20px; /* Add some spacing between text and image */
-}
 
 .profile-image {
     width: 100px; /* Adjust as needed for your desired 2x2 size */
@@ -159,3 +154,37 @@ header div img {
     border-radius: 50%; /* Make it circular (optional) */
     object-fit: cover; /* Ensure the image fills the container without distortion */
 }
+
+
+.backbuttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .backbuttons a {
+    background: #9FB8AD;
+    font-family: Rubik;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    margin-left: 5px;
+  }
+
+  .backbuttons a:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray; 
+  }
+
+  .backbuttons .back {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
