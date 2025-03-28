@@ -24,6 +24,11 @@ body {
     transition: 0.5s ease-in-out;
 }
 
+sup {
+    color: #9FB8AD;
+    font-style: italic;
+}
+
 
 .header {
     background-color: #475841; /* Darker background for better contrast */
@@ -311,11 +316,11 @@ body {
     width: 200px;
     height: 200px; /* Adjust height automatically */
     transition: transform 0.3s ease-in-out;
-    object-fit: cover;
+    transform: scale(1.1);
 }
 
 .gallery-item:hover img {
-    transform: scale(0.98);
+    transform: scale(1.1);
 }
 
 .gallery-item:hover {

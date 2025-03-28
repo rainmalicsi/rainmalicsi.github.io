@@ -1,9 +1,3 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* Body Styling */
 body {
@@ -11,69 +5,145 @@ body {
     line-height: 1.6;
     background-color: #3f403f;
     color: #e6e8e6;
-    padding: 20px;
+    margin: 0;
+}
+
+.title {
+    font-family: 'Noto Serif';
+    font-size: 20px;
+    color: #9fb8ad;
+    text-align: center;
+    justify-items: center;
+    text-shadow: 2px 2px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
 }
 
 /* Container */
 .container {
-    max-width: 1400px;
-    margin: 5px auto;
-    padding: 20px;
-    background: #475841;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #3F403F; /* Match the body background */
+    padding: 15px;
+    border-radius: 15px;
+    width: calc(88.88% - 30px);
+    box-shadow: 0 0 25px rgba(106, 174, 106, 0.608); /* Original shadow */
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex; /* Enable flexbox for positioning */
+    flex-direction: column; /* Stack children vertically */
+    align-items: stretch; /* Stretch items to fill the container width */
+    text-align: left; /* Align text within items to the left */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Optional: Subtle border for definition */
+    position: relative; /* Make this a positioning context for absolute children */
+    gap: 20px; /* Spacing between the image and the text container */
+    padding-bottom: 50px;
 }
 
+.container p {
+    line-height: 2;
+    text-indent: 50px;
+    margin: 0;
+    font-family: Rubik;
+    text-align: justify;
+    margin: 0px 50px;
+}
+
+
+.container h2 {
+    font-size: 35px;
+    padding-top: 30px;
+    margin-top: 0;
+    font-family: 'Noto Serif', serif;
+    color: #9fb8ad;
+    text-shadow: 2px 2px 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.container h3 {
+    padding-top: 20px;
+    margin-top: 0;
+    font-family: 'Noto Serif', serif;
+    color: #9fb8ad;
+    text-shadow: 2px 2px 30px;
+    font-weight: bold;
+    margin: 0;
+}
 /* Image Styling */
-.image-box {
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border-style: double;
+    border-width: 10px;
+    border-color: #9fb8ad;
+    transition: 0.5s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjust shadow for visibility */
+    margin-top: 20px; /* Add margin to separate from the text */
+    align-self: center; /* Center the image within the bucket item */
+    margin: 30px 30px 50px 30px;
+}
+
+.gallery-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
-.image-box a {
-    display: inline-block; /* Or inline-block, depending on desired spacing behavior */
-    max-width: 400px; /* Keep the max-width constraint */
-}
 
-.image-box img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    opacity: 0.85;
-    max-width: 400px;
+.gallery-item img {
+    width: 300px;
+    height: 300px; /* Adjust height automatically */
+    transition: transform 0.3s ease-in-out;
     object-fit: cover;
+    transform: scale(1.1);
 }
 
-.image-box img:hover {
-    opacity: 1.0;
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    border-style: dotted; /* Correct way to set the border style */
+    border-width: 10px;
+    border-color: #e6e8e6; /* Highlight border color on hover */
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.overlay:hover {
+    opacity: 1;
 }
 
 /* Headings */
 
-h1, h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #e6e8e6;
-}
-
- h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #e6e8e6;
-}
-
-h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #e6e8e6;
-}
 ul {
     margin-left: 40px; /* Adds a 20px margin on all sides */
   }
@@ -110,28 +180,12 @@ ul {
 }
 
 .place-info {
-    background-color: #5e35b1; /* Purple background */
-    color: white;
+    background-color: #9fb8ad; /* Purple background */
+    color: #3f403f;
     padding: 10px;
     text-align: center;
     font-weight: bold;
     font-size: 0.9em;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .places-grid {
-        gap: 10px;
-    }
-    .place-item {
-        width: calc(50% - 10px); /* Two items per row on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .place-item {
-        width: 100%; /* One item per row on small screens */
-    }
 }
 
 .header {
@@ -191,6 +245,17 @@ ul {
 }
 
 
+
+
+
+.noto-serif-<uniquifier> {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+  }
 
 
 
