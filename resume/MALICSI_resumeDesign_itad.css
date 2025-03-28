@@ -149,6 +149,7 @@ header div img {
 
 
 .profile-image {
+    margin-top: 100px;
     width: 100px; /* Adjust as needed for your desired 2x2 size */
     height: 100px;
     border-radius: 50%; /* Make it circular (optional) */
