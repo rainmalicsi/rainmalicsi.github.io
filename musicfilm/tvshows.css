@@ -1,42 +1,3 @@
-html, body {
-    height: auto;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-body {
-    background-color: #3F403F;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
-.container {
-    padding: 20px;
-    max-width: 1600px;
-    margin: 5px auto;
-    padding: 20px;
-    background: #475841;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.image-container img {
-    width: auto; /* Or a specific width like 800px if you want it larger initially */
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    max-width: 800px; /* Increase the maximum width if needed */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Or cover, depending on your desired effect */
-}
 body {
     margin: 0;
     padding: 0;
@@ -231,7 +192,7 @@ section h2 {
     border: none;
 }
 
-.header-button[data-page="map"] {
+.header-button[data-page="tv-shows"] {
     background-color: #9fb8ad;
     color: #3f403f;
 }
@@ -275,87 +236,6 @@ section h2 {
         "wdth" 100;
   }
 
-
-.rubik-<uniquifier> {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-.text-container {
-    font-family: Rubik;
-    font-size: 12px;
-    color: #9FB8AD;
-    text-align: center;
-}
-
-.title {
-    font-family: 'Noto Serif';
-    font-size: 20px;
-    color: #9fb8ad;
-    text-align: center;
-    justify-items: center;
-    text-shadow: 2px 2px 30px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.title h1 {
-    position: relative;
-    display: inline-block;
-    padding: 0 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.noto-serif-<uniquifier> {
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
-  }
 
 .rubik-<uniquifier> {
     font-family: "Rubik", sans-serif;
