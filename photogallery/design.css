@@ -5,14 +5,23 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 header {
-    background-color: #3F403F;
     color: #9FB8AD;
-    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    text-shadow: 2px 2px 30px;
+    font-family: 'Noto Serif';
     text-align: center;
     padding: 1em 0;
+}
+
+.text-container {
+    font-family: 'Noto Serif';
+    color: #9FB8AD;
+    text-shadow: 2px 2px 30px;
+    text-align: center;
+    
 }
 
 .gallery-container {
@@ -28,53 +37,60 @@ header {
 .gallery-item {
     width: calc(20% - 30px); /* Adjusted width to account for the larger gap */
     min-width: 160px; /* Increased min-width for larger images */
-    box-sizing: border-box;
+    position: relative;
 }
 
 .gallery-item a {
-    display: block;
+    display: block; /* Make it a block-level element */
 }
 
 .gallery-item img {
-    opacity: 0.80;
+    opacity: 1;
     display: block;
     width: 100%;
     height: auto;
-    border: 2px solid #9FB8AD;
+    border-radius: 5px;
+    border-style: double;
+    border-width: 10px;
+    border-color: #9fb8ad;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
-    transition: transform 0.3s ease, opacity 0.3s ease, border-color 0.3s ease-in-out;
 }
 
 .gallery-item img:hover {
-    opacity: 1;
-    transform: scale(1.05);
+    opacity: 0.80;
     border-color: #9FBA8D;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1200px) { /* Adjusted breakpoint */
-    .gallery-item {
-        width: calc(25% - 30px); /* Aiming for roughly 4 images per row */
-    }
+.gallery-item:hover img{
+    border-style: dotted;
+    border-width: 10px;
+    border-color: #E6E8E6;
+    transition: 0.5s ease;
 }
 
-@media (max-width: 900px) {
-    .gallery-item {
-        width: calc(33.33% - 30px); /* Roughly 3 images per row */
-    }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px; /* Match the image border-radius */
 }
 
-@media (max-width: 600px) {
-    .gallery-item {
-        width: calc(50% - 30px); /* Roughly 2 images per row */
-    }
-}
+.overlay:hover {
+    opacity: 1;
 
-@media (max-width: 400px) {
-    .gallery-item {
-        width: calc(100% - 30px); /* 1 image per row */
-    }
 }
 
 
@@ -150,3 +166,34 @@ header {
     background-color: #9fb8ad;
     color: #3f403f;
 }
+
+.backbuttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+
+  }
+
+  .backbuttons a {
+    background: #9FB8AD;
+    font-family: Rubik;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    margin-left: 5px;
+  }
+
+  .backbuttons a:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray; 
+  }
+
+  .backbuttons .back {
+    margin-left: 0;
+    margin-right: 20px;
+  }
