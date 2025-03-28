@@ -143,3 +143,19 @@ header div img {
     background-color: #9fb8ad;
     color: #3f403f;
 }
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.header-content h1, .header-content h3 {
+    margin-right: 20px; /* Add some spacing between text and image */
+}
+
+.profile-image {
+    width: 100px; /* Adjust as needed for your desired 2x2 size */
+    height: 100px;
+    border-radius: 50%; /* Make it circular (optional) */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
+}

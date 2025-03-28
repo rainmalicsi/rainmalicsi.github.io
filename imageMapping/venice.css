@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+
 .title {
     font-family: 'Noto Serif';
     font-size: 20px;
@@ -52,7 +53,8 @@ body {
     margin: 0;
     font-family: Rubik;
     text-align: justify;
-    margin: 0px 50px;
+    margin: 5px 50px;
+
 }
 
 
@@ -69,7 +71,7 @@ body {
 }
 
 .container h3 {
-    padding-top: 20px;
+    padding-left: 20px;
     margin-top: 0;
     font-family: 'Noto Serif', serif;
     color: #9fb8ad;
@@ -88,6 +90,7 @@ body {
     border-color: #9fb8ad;
     transition: 0.5s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjust shadow for visibility */
+    object-fit: fill;
     margin-top: 20px; /* Add margin to separate from the text */
     align-self: center; /* Center the image within the bucket item */
     margin: 30px 30px 50px 30px;
@@ -98,13 +101,14 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: -30px;
 }
 
 .gallery-item img {
     width: 300px;
     height: 300px; /* Adjust height automatically */
     transition: transform 0.3s ease-in-out;
-    object-fit: cover;
+    object-fit: cover   ;
     transform: scale(1.1);
 }
 
@@ -144,6 +148,7 @@ body {
 
 /* Headings */
 
+
 ul {
     margin-left: 40px; /* Adds a 20px margin on all sides */
   }
@@ -155,6 +160,7 @@ ul {
     flex-wrap: wrap;
     gap: 15px; /* Spacing between the image boxes */
     justify-content: center; /* Center the items horizontally */
+    margin-bottom: 20px;
 }
 
 .place-item {
@@ -180,7 +186,7 @@ ul {
 }
 
 .place-info {
-    background-color: #9fb8ad; /* Purple background */
+    background-color: #9FB8AD; /* Purple background */
     color: #3f403f;
     padding: 10px;
     text-align: center;
@@ -197,6 +203,7 @@ ul {
     align-items: center;
     font-weight: bold;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0;
 }
 
 .logo {
@@ -246,6 +253,61 @@ ul {
 
 
 
+.backbuttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-top: -20px;
+  }
+
+  .backbuttons a {
+    background: #9FB8AD;
+    font-family: Rubik;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    margin-left: 5px;
+  }
+
+  .backbuttons a:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray; 
+  }
+
+  .backbuttons .back {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .noto-serif-<uniquifier> {
@@ -256,8 +318,6 @@ ul {
     font-variation-settings:
         "wdth" 100;
   }
-
-
 
 .rubik-<uniquifier> {
     font-family: "Rubik", sans-serif;

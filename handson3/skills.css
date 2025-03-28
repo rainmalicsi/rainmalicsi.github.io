@@ -124,41 +124,35 @@ sup {
 
 
 .links {
-    padding: 1px;
-    border-radius: 8px;
-    margin: 0px 300px 0px 300px;
-    text-align: center;
-  }
-  
-  .links a {
-    font-family: Rubik;
-    margin-left: 20px;
-  }
-  
-  .links h3 {
-    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
-    color: #9FB8AD;
-    font-size: 1.5em;
-  }
-  
-  .shortcut-link {
-    background-color: #9FB8AD;
-    color: #3F403F;
-    padding: 1em 1.5em;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 5px;
-    border-radius: 5px;
-    display: inline-block; 
-    transition: background-color 0.3s ease;
-    font-weight: 500;
-  }
-  
-  .shortcut-link:hover {
-    background-color: #E6E8E6;
-    box-shadow: 0 6px 12px gray
-  }
-  
+  padding: 0 10px;
+  border-radius: 8px;
+  margin: 0 300px;
+  text-align: center;
+}
+
+.links a {
+  font-family: Rubik;
+  margin: 0 10px;
+  margin-bottom: 30px;
+}
+
+.shortcut-link {
+  color: #9fb8ad;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0;
+  border-radius: 5px;
+  display: inline-block; 
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.shortcut-link:hover {
+  background-color: #475841;
+  color: #e6e8e6;
+  box-shadow: 0 0 1px rgba(106, 174, 106, 0.608); /* Original shadow */
+}
 
   /* go top home button */
 

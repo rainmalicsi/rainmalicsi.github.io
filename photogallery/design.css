@@ -25,6 +25,8 @@ header {
 }
 
 .gallery-container {
+    padding-top: 20px;
+    padding-right: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px; /* Increased gap for more spacing */
@@ -93,6 +95,39 @@ header {
 
 }
 
+
+/* shortcut links */
+
+.links {
+    padding: 0 10px;
+    border-radius: 8px;
+    margin: 0 300px;
+    text-align: center;
+  }
+  
+  .links a {
+    font-family: Rubik;
+    margin: 0 10px;
+    margin-bottom: 30px;
+  }
+  
+  .shortcut-link {
+    color: #9fb8ad;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0;
+    border-radius: 5px;
+    display: inline-block; 
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .shortcut-link:hover {
+    background-color: #475841;
+    color: #e6e8e6;
+    box-shadow: 0 0 1px rgba(106, 174, 106, 0.608); /* Original shadow */
+  }
 
 .topbtn a {
     background: #9FB8AD;
@@ -173,7 +208,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     padding-right: 30px;
-
+    padding-bottom: 20px;
   }
 
   .backbuttons a {
