@@ -212,30 +212,6 @@ body {
     color: #e6e8e6;
 }
 
-/* Title section enhancement */
-.title h1 {
-    position: relative;
-    display: inline-block;
-    padding: 0 30px;
-}
-
-.title h1::before,
-.title h1::after {
-    content: "✧";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #9FBA8D;
-    font-size: 0.6em;
-}
-
-.title h1::before {
-    left: 0;
-}
-
-.title h1::after {
-    right: 0;
-}
 
 .backbuttons {
     display: flex;

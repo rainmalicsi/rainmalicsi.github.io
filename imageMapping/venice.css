@@ -158,7 +158,7 @@ ul {
   .places-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px; /* Spacing between the image boxes */
+    gap: 20px; /* Spacing between the image boxes */
     justify-content: center; /* Center the items horizontally */
     margin-bottom: 20px;
 }
@@ -173,9 +173,7 @@ ul {
     transition: transform 0.3s ease-in-out;
 }
 
-.place-item:hover {
-    transform: translateY(-5px);
-}
+
 
 .place-item img {
     display: block;

@@ -238,6 +238,42 @@ section h2 {
 
 
 
+.backbuttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .backbuttons a {
+    background: #9FB8AD;
+    font-family: Rubik;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    margin-left: 5px;
+  }
+
+  .backbuttons a:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray; 
+  }
+
+  .backbuttons .back {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+
+
+
+
 
 
 

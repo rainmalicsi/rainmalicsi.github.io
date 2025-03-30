@@ -78,6 +78,10 @@ section h2 {
     
 }
 
+.media-item:hover {
+    border: 2px solid #9FB8AD;
+}
+
 .media-item h3 {
     margin: 0;
 }

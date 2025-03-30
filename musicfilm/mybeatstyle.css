@@ -29,6 +29,7 @@ header {
     text-align: center;
     padding: 1em 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 30px;
 }
 
 main {
@@ -40,7 +41,7 @@ main {
 
 
 section h2 {
-    border-bottom: 1px solid #9FB8AD;
+    border-bottom: 1px #9FB8AD;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -74,12 +75,27 @@ section h2 {
     background-color: #3F403F;
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid #9FB8AD;
+    border: 1px double #9FB8AD;
     width: calc(33.33% - 15px);
     box-sizing: border-box;
     text-align: center;
     margin-bottom: 20px;
     margin-left: 5px;
+}
+
+.music-item:hover {
+    border-radius: 5px;
+    border-style: solid; /* Correct way to set the border style */
+    border-width: 2px; /* Separate property for border width */
+    border-color: #9fb8ad;
+}
+
+
+.music-item:hover img {
+    border-radius: 5px;
+    border-style: dotted; /* Correct way to set the border style */
+    border-width: 5 px; /* Separate property for border width */
+    border-color: #9fb8ad;
 }
 
 .music-item h3 {
@@ -92,18 +108,13 @@ section h2 {
 }
 
 .music-item img {
+    margin: 20px 0;
     border-radius: 5px;
     border-style: double; /* Correct way to set the border style */
     border-width: 5px; /* Separate property for border width */
     border-color: #9fb8ad;
 }
 
-.music-item img:hover {
-    border-radius: 5px;
-    border-style: dotted; /* Correct way to set the border style */
-    border-width: 5 px; /* Separate property for border width */
-    border-color: #9fb8ad;
-}
 
 .text-container {
     text-align: justify;
