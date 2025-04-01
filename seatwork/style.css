@@ -1,0 +1,298 @@
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-serif-<uniquifier> {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+      "wdth" 100;
+}
+
+html, body {
+  height: 100%; /* Make the body take up the full viewport height */
+  margin: 0; /* Remove default margins */
+}
+
+  p {
+    color: #E6E8E6;
+    font-family: Rubik;
+    line-height: 2;
+  }
+  
+  body {
+    background-color: #3F403F;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 20px;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    color: #9FB8AD;
+  }
+
+  h2 {
+    text-shadow: 2px 2px 30px;
+    text-decoration: underline;
+    font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+    color: #9FB8AD;
+    font-style: italic;
+    background: #475841;
+    padding: 5px;
+  }
+  
+  sup {
+    color: #9FB8AD;
+    font-style: italic;
+  }
+  
+  div[align="justify"] {
+    margin-bottom: 30px; /* Add spacing between sections */
+  }
+  
+  div {
+    padding: 5px;
+}
+
+/* buttons customization*/
+
+.shorts {
+  background-color: #475841;
+}
+
+.links {
+  padding: 1px;
+  border-radius: 8px;
+  margin: 0px 300px 0px 300px;
+  text-align: center;
+  background-color: #475841;
+}
+
+.links a {
+  font-family: Rubik;
+  margin-left: 20px;
+}
+
+.links h3 {
+  font-family: 'DM Serif Display', 'Noto Serif', Tropikal, Georgia, serif;
+  color: #9FB8AD;
+  font-size: 1.5em;
+}
+
+.shortcut-link {
+  background-color: #9FB8AD;
+  color: #3F403F;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block; 
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.shortcut-link:hover {
+  background-color: #E6E8E6;
+  box-shadow: 0 6px 12px gray
+}
+
+
+.gotop a {
+  background: #9FB8AD;
+  color: #3F403F; 
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px;
+}
+
+.top:hover {
+  background-color: #E6E8E6;
+  box-shadow: 0 6px 12px gray;
+}
+
+.topbtn a {
+  background: #9FB8AD;
+  color: #3F403F; 
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px;
+  font-size: 30px;
+}
+
+.back:hover {
+  background-color: #E6E8E6;
+  box-shadow: 0 6px 12px gray; 
+}
+
+.image-container {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Optionally center items vertically if needed */
+  flex-wrap: wrap; /* allows images to wrap to the next line on smaller screens, if desired. */
+  gap: 40px;
+}
+
+img {
+  object-fit: cover;
+}
+
+.child {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: inline-block;
+  display: block; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 4px solid #9FB8AD; 
+}
+
+.child:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Added slight zoom on hover */
+  box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+  border: 4px solid #475841;
+  
+}
+
+.teen {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: inline-block;
+  display: block; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 4px solid #9FB8AD; 
+}
+
+.teen:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Added slight zoom on hover */
+  box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+  border: 4px solid #475841;
+} 
+
+.adult {
+  width: 300px;
+  height: 250px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: inline-block;
+  display: block; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 4px solid #9FB8AD; 
+}
+
+.bball{
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  opacity: 0.75;
+  border-radius: 30px;
+  display: inline-block;
+  display: block; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: 4px solid #9FB8AD; 
+}
+
+.adult:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Added slight zoom on hover */
+  box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+  border: 4px solid #475841;
+}
+
+.bball:hover {
+  opacity: 1;
+  transform: scale(1.05); /* Added slight zoom on hover */
+  box-shadow: 0 0px 5px #59625e; /* Enhanced shadow on hover */
+  border: 4px solid #475841;
+}
+
+.title {
+  margin-top: 120px;
+}
+
+.header {
+  background-color: #475841; /* Darker background for better contrast */
+  color: #9fb8ad;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  /* New properties for sticky positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make it span the entire width */
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.logo {
+  margin-right: 20px;
+  font-family: 'Noto Serif', serif; /* Added fallback serif font */
+  text-align: left;
+  font-size: 1.8em; /* Slightly larger logo */
+  letter-spacing: 0.5px;
+}
+
+.header nav {
+  display: flex; /* Ensure buttons are in a row */
+  align-items: center; /* Vertically align buttons */
+}
+
+
+
+.header-button {
+  background-color: transparent; /* Transparent background for buttons */
+  color: #ddd;
+  font-family: 'Noto Serif', serif; /* Added fallback serif font */
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  border: 1px solid transparent; /* Add a transparent border for smoother hover */
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background on hover */
+  color: #fff;
+  border-color: #555; /* Subtle border on hover */
+}
+
+.header-button.current {
+  background-color: #5cb85c; /* Highlight color for the current page */
+  color: #fff;
+  border: none;
+}
+
+.header-button[data-page="about"] {
+  /* Distinct styles for Home on index.html */
+  background-color: #9fb8ad;
+  color: #3f403f;
+}
+

@@ -1,0 +1,327 @@
+
+/* Body Styling */
+body {
+    font-family: Rubik;
+    line-height: 1.6;
+    background-color: #3f403f;
+    color: #e6e8e6;
+    margin: 0;
+}
+
+
+.title {
+    font-family: 'Noto Serif';
+    font-size: 20px;
+    color: #9fb8ad;
+    text-align: center;
+    justify-items: center;
+    text-shadow: 2px 2px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.title h1 {
+    position: relative;
+    display: inline-block;
+    padding: 0 30px;
+}
+
+/* Container */
+.container {
+    background-color: #3F403F; /* Match the body background */
+    padding: 15px;
+    border-radius: 15px;
+    width: calc(88.88% - 30px);
+    box-shadow: 0 0 25px rgba(106, 174, 106, 0.608); /* Original shadow */
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex; /* Enable flexbox for positioning */
+    flex-direction: column; /* Stack children vertically */
+    align-items: stretch; /* Stretch items to fill the container width */
+    text-align: left; /* Align text within items to the left */
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Optional: Subtle border for definition */
+    position: relative; /* Make this a positioning context for absolute children */
+    gap: 20px; /* Spacing between the image and the text container */
+    padding-bottom: 50px;
+}
+
+.container p {
+    line-height: 2;
+    text-indent: 50px;
+    margin: 0;
+    font-family: Rubik;
+    text-align: justify;
+    margin: 5px 50px;
+
+}
+
+
+.container h2 {
+    font-size: 35px;
+    padding-top: 30px;
+    margin-top: 0;
+    font-family: 'Noto Serif', serif;
+    color: #9fb8ad;
+    text-shadow: 2px 2px 30px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+.container h3 {
+    padding-left: 20px;
+    margin-top: 0;
+    font-family: 'Noto Serif', serif;
+    color: #9fb8ad;
+    text-shadow: 2px 2px 30px;
+    font-weight: bold;
+    margin: 0;
+}
+/* Image Styling */
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    border-style: double;
+    border-width: 10px;
+    border-color: #9fb8ad;
+    transition: 0.5s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Adjust shadow for visibility */
+    object-fit: fill;
+    margin-top: 20px; /* Add margin to separate from the text */
+    align-self: center; /* Center the image within the bucket item */
+    margin: 30px 30px 50px 30px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30px;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 300px; /* Adjust height automatically */
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover   ;
+    transform: scale(1.1);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    border-style: dotted; /* Correct way to set the border style */
+    border-width: 10px;
+    border-color: #e6e8e6; /* Highlight border color on hover */
+    transition: 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: Rubik;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Headings */
+
+
+ul {
+    margin-left: 40px; /* Adds a 20px margin on all sides */
+  }
+
+
+
+  .places-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Spacing between the image boxes */
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 20px;
+}
+
+.place-item {
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden; /* Clip content that goes outside the border-radius */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 15px); /* Roughly one-third width with spacing */
+    min-width: 200px; /* Minimum width for smaller screens */
+    transition: transform 0.3s ease-in-out;
+}
+
+.place-item:hover {
+    transform: translateY(-5px);
+}
+
+.place-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintain a consistent aspect ratio */
+    object-fit: cover; /* Cover the container, may crop */
+}
+
+.place-info {
+    background-color: #9FB8AD; /* Purple background */
+    color: #3f403f;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.header {
+    background-color: #475841; /* Darker background for better contrast */
+    color: #9fb8ad;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0;
+}
+
+.logo {
+    margin-right: 20px;
+    font-family: 'Noto Serif', serif; /* Added fallback serif font */
+    text-align: left;
+    font-size: 1.8em; /* Slightly larger logo */
+    letter-spacing: 0.5px;
+}
+
+.header nav {
+    display: flex; /* Ensure buttons are in a row */
+    align-items: center; /* Vertically align buttons */
+}
+
+
+
+.header-button {
+    background-color: transparent; /* Transparent background for buttons */
+    color: #ddd;
+    font-family: 'Noto Serif', serif; /* Added fallback serif font */
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    border: 1px solid transparent; /* Add a transparent border for smoother hover */
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighter background on hover */
+    color: #fff;
+    border-color: #555; /* Subtle border on hover */
+}
+
+.header-button.current {
+    background-color: #5cb85c; /* Highlight color for the current page */
+    color: #fff;
+    border: none;
+}
+
+.header-button[data-page="home"] {
+    /* Distinct styles for Home on index.html */
+    background-color: #9fb8ad;
+    color: #3f403f;
+}
+
+
+
+.backbuttons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 30px;
+    padding-top: -20px;
+  }
+
+  .backbuttons a {
+    background: #9FB8AD;
+    font-family: Rubik;
+    color: #3F403F; 
+    padding: 10px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px;
+    margin-left: 5px;
+  }
+
+  .backbuttons a:hover {
+    background-color: #E6E8E6;
+    box-shadow: 0 6px 12px gray; 
+  }
+
+  .backbuttons .back {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.noto-serif-<uniquifier> {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+  }
+
+.rubik-<uniquifier> {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
