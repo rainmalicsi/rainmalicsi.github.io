@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form bruh</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 50px;
+        }
+
+        th, tr, td {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <form action="">
+            <thead>
+                <tr>
+                    <th>Labels:</th>
+                    <th>Input Here.</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="email">Email: </label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="email" size="30" placeholder="rain123@gmail.com" maxlength="50">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password: </label></td>
+
+                    <td>
+                        <input type="password" name="password" size="30">
+                    </td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </tfoot>
+        </form>
+    </table>
+</body>
+</html>
