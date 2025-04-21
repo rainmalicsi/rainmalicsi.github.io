@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        tr,
+        td,
+        th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .text {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <form action="">
+            <thead>
+                <tr>
+                    <th colspan="4">
+                        Customer Information
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><label for="fullname">Full Name: </label></td>
+                    <td>
+                        <input type="text" id="fullname" size="30" maxlength="50" placeholder="Type your name here">
+                    </td>
+
+                    <td><label for="contact">Contact Number: </label></td>
+                    <td>
+                        <input type="text" id="contact" size="30" maxlength="50" placeholder="09123456789">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Complete Address: </label></td>
+                    <td>
+                        <input type="text" id="address" size="30" maxlength="50" placeholder="Type your address here">
+                    </td>
+
+                    <td><label for="email">Email Address: </label></td>
+                    <td>
+                        <input type="email" id="email" size="30" maxlength="50" placeholder="raindavid@gmail.com">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="description">How to get there: </label></td>
+                    <td colspan="3" style="text-align: center; vertical-align: middle;">
+                        <textarea class="text" name="desc" id="description" rows="5" cols="90" maxlength="50"
+                            placeholder="Describe how to get to the place"></textarea>
+                            <br>
+                        <label for="pickupdate">Order date:</label>
+                        <input type="date" id="pickupdate" value="pickupdate">
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <th colspan="4">
+                        Order Form
+                    </th>
+                </tr>
+
+                <tr>
+                    <td><label for="burgers">Burgers: </label>
+                    
+                        <br>
+
+                        <input type="radio" id="single" name="patty" value="single">
+                        <label for="single">Single Patty</label>
+                        <input type="radio" id="double" name="patty" value="double">
+                        <label for="double">Double Patty</label>
+
+                        <br>
+
+                        <label for="extras">Extras: </label>
+                    
+                        <br>
+
+                        <input type="checkbox" id="cheese" name="extras" value="cheese">
+                        <label for="cheese">Cheese</label>
+                        <input type="checkbox" id="coleslaw" name="extras" value="coleslaw">
+                        <label for="coleslaw">Coleslaw</label>
+                        <input type="checkbox" id="tomato" name="extras" value="tomato">
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" id="onion" name="extras" value="onion">
+                        <label for="onion">Onion</label>
+                        <input type="checkbox" id="cucumber" name="extras" value="cucumber">
+                        <label for="cucumber">Cucumber</label>
+                        <input type="checkbox" id="bacon" name="extras" value="bacon">
+                        <label for="bacon">Bacon</label>
+                    
+                        <br>
+
+                    <label for="buns">Choice of buns: </label>
+                   
+                    <br>
+                    
+                        <input type="radio" name="bun" id="white-bun">
+                        <label for="white-bun">White Bun</label>
+                        <input type="radio" name="bun" id="wheat-bun">
+                        <label for="wheat-bun">Wheat Bun</label>
+                        <input type="radio" name="bun" id="honey oat">
+                        <label for="honey oat">Honey Oat</label>
+                        <input type="radio" name="bun" id="sugar-free">
+                        <label for="sugar-free">Sugar-Free</label>
+
+                    </td>
+
+                    
+                    
+                </tr>
+
+                <tr>
+                    
+                </tr>
+
+                <tr>
+                    
+                </tr>
+
+                <tr>
+                    <td><label for="pasta">Pasta: </label></td>
+                    <td>
+                        <select name="pasta_sauce" id="pasta_sauce">
+                            <option value="carbo">Carbonara</option>
+                            <option value="pesto">Pesto</option>
+                            <option value="spaghetti">Spaghetti</option>
+                            <option value="extra-cheese">Extra Cheese</option>
+                            <option value="extra-sauce">Extra Sauce</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="quantity">Quantity:</label></td>
+                    <td><input type="text" size="3" maxlength="10" placeholder="Quantity"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="fries">Fries: </label></td>
+                    <td>
+                        <input type="radio" name="fries" id="small">
+                        <label for="small">Small</label>
+                        <input type="radio" name="fries" id="medium">
+                        <label for="medium">Medium</label>
+                        <input type="radio" name="fries" id="large">
+                        <label for="large">Large</label>
+
+                        <label for="flavor">Flavor: </label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="bbq" name="extras">
+                        <label for="bbq">Barbeque</label>
+                        <input type="checkbox" id="cheese" name="extras">
+                        <label for="cheese">Cheese</label>
+                        <input type="checkbox" id="sour_cream" name="extras">
+                        <label for="sour_cream">Sour Cream</label>
+                    </td>
+                </tr>
+            </tbody>
+        </form>
+    </table>
+</body>
+
+</html>
