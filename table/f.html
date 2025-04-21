@@ -34,7 +34,7 @@
                     </td>
 
                     <td>
-                        <input type="text" name="email" size="30" placeholder="rain123@gmail.com" maxlength="50">
+                        <input type="email" name="email" size="30" placeholder="rain123@gmail.com" maxlength="50">
                     </td>
                 </tr>
 
@@ -43,6 +43,40 @@
 
                     <td>
                         <input type="password" name="password" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Confirm Password: </label></td>
+
+                    <td>
+                        <input type="password" name="password" size="30">
+                    </td>
+                </tr>
+
+                <tr>                             
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="country">Select country:</label></td>
+                    <td>
+                        <select name="country" id="country">
+                
+                            <option value="USA">USA</option>    
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Australia">Australia</option>
+                        </select>
                     </td>
                 </tr>
             </tbody>
