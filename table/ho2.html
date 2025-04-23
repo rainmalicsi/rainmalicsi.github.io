@@ -81,7 +81,7 @@
                 </tr>
 
                 <tr>
-                    <td><label for="burgers">Burgers: </label>
+                    <td colspan="2"><label for="burgers">Burgers: </label>
                     
                         <br>
 
@@ -125,22 +125,9 @@
                         <label for="sugar-free">Sugar-Free</label>
 
                     </td>
-
                     
+                    <td colspan="2"><label for="pasta">Pasta: </label>
                     
-                </tr>
-
-                <tr>
-                    
-                </tr>
-
-                <tr>
-                    
-                </tr>
-
-                <tr>
-                    <td><label for="pasta">Pasta: </label></td>
-                    <td>
                         <select name="pasta_sauce" id="pasta_sauce">
                             <option value="carbo">Carbonara</option>
                             <option value="pesto">Pesto</option>
@@ -149,25 +136,32 @@
                             <option value="extra-sauce">Extra Sauce</option>
                         </select>
                     </td>
+                    
+                    
                 </tr>
 
                 <tr>
-                    <td><label for="quantity">Quantity:</label></td>
-                    <td><input type="text" size="3" maxlength="10" placeholder="Quantity"></td>
+                    
                 </tr>
 
                 <tr>
-                    <td><label for="fries">Fries: </label></td>
-                    <td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="fries">Fries: </label>
+
+                        <br>
+                    
                         <input type="radio" name="fries" id="small">
                         <label for="small">Small</label>
                         <input type="radio" name="fries" id="medium">
                         <label for="medium">Medium</label>
                         <input type="radio" name="fries" id="large">
                         <label for="large">Large</label>
-
-                        <label for="flavor">Flavor: </label>
+                        
                         <br>
+                        <br>
+                        <label for="flavor">Flavor: </label>
                         <br>
                         <input type="checkbox" id="bbq" name="extras">
                         <label for="bbq">Barbeque</label>
@@ -176,7 +170,30 @@
                         <input type="checkbox" id="sour_cream" name="extras">
                         <label for="sour_cream">Sour Cream</label>
                     </td>
+
+                    
                 </tr>
+
+                <tr>
+                    
+                </tr>
+
+                <tr>
+                    <td><label for="quantity">Quantity:</label></td>
+                    <td><input type="text" size="3" maxlength="10" placeholder="Quantity"></td>
+                </tr>
+
+                
+
+                <tr>
+                    <td colspan="4" style="text-align: center; vertical-align: middle;">
+                        <button type="submit">Submit Order</button>
+                        <button type="reset">Clear Form</button>
+                    </td>
+                    
+                </tr>
+
+
             </tbody>
         </form>
     </table>
