@@ -8,20 +8,56 @@
 
     <style>
         table {
-            border: 1px solid black;
             border-collapse: collapse;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 70%;
+
         }
 
         tr,
         td,
         th {
+            border-bottom: 1px solid #9fb8ad;
             padding: 10px;
-            border: 1px solid black;
+           
         }
 
+        tr td {
+            background-color: rgb(243, 243, 220);
+        }
+
+        th {
+            background-color: rgb(228, 158, 28);
+        }
         .text {
             resize: none;
+        }
+
+        input[type=text], textarea, select, .email{
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #B4DFE5;
+            color: navy;
+            padding: 15px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: Tahoma;
+            font-size: 1.125em;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -58,7 +94,7 @@
 
                     <td><label for="email">Email Address: </label></td>
                     <td>
-                        <input type="email" id="email" size="30" maxlength="50" placeholder="raindavid@gmail.com">
+                        <input class="email" type="email" id="email" size="30" maxlength="50" placeholder="raindavid@gmail.com">
                     </td>
                 </tr>
 
@@ -70,6 +106,9 @@
                             <br>
                         <label for="pickupdate">Order date:</label>
                         <input type="date" id="pickupdate" value="pickupdate">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                        <label for="time">Order time:</label>
+                        <input type="time" id="pickuptime" value="pickuptime">
                     </td>
 
                 </tr>
@@ -81,118 +120,148 @@
                 </tr>
 
                 <tr>
-                    <td colspan="2"><label for="burgers">Burgers: </label>
-                    
+                    <td colspan="2">
+                        <img src="99d4ffdc8b0039aca8aa5f2cfde885e8.png" alt="a burger" width="100px" height="100px">
                         <br>
-
+                        <label for="burgers">Burgers: </label>
+                        <br>
                         <input type="radio" id="single" name="patty" value="single">
-                        <label for="single">Single Patty</label>
-                        <input type="radio" id="double" name="patty" value="double">
-                        <label for="double">Double Patty</label>
-
+                        <label for="single">Single Patty - ₱50</label>
+                        <input type="radio" id="double" name="patty" value="double" checked>
+                        <label for="double">Double Patty - ₱80</label>
                         <br>
-
+                        <br>
                         <label for="extras">Extras: </label>
-                    
                         <br>
-
-                        <input type="checkbox" id="cheese" name="extras" value="cheese">
-                        <label for="cheese">Cheese</label>
-                        <input type="checkbox" id="coleslaw" name="extras" value="coleslaw">
-                        <label for="coleslaw">Coleslaw</label>
-                        <input type="checkbox" id="tomato" name="extras" value="tomato">
-                        <label for="tomato">Tomato</label>
-                        <input type="checkbox" id="onion" name="extras" value="onion">
-                        <label for="onion">Onion</label>
-                        <input type="checkbox" id="cucumber" name="extras" value="cucumber">
-                        <label for="cucumber">Cucumber</label>
-                        <input type="checkbox" id="bacon" name="extras" value="bacon">
-                        <label for="bacon">Bacon</label>
-                    
+                        <input type="checkbox" id="cheese" name="extras" value="cheese" checked>
+                        <label for="cheese">Cheese - ₱10</label>
+                        <input type="checkbox" id="coleslaw" name="extras" value="coleslaw" checked>
+                        <label for="coleslaw">Coleslaw - ₱15</label>
+                        <input type="checkbox" id="tomato" name="extras" value="tomato" checked>
+                        <label for="tomato">Tomato - ₱5</label>
                         <br>
-
-                    <label for="buns">Choice of buns: </label>
-                   
-                    <br>
-                    
-                        <input type="radio" name="bun" id="white-bun">
-                        <label for="white-bun">White Bun</label>
+                        <input type="checkbox" id="onion" name="extras" value="onion" checked>
+                        <label for="onion">Onion - ₱5</label>
+                        <input type="checkbox" id="cucumber" name="extras" value="cucumber" checked>
+                        <label for="cucumber">Cucumber - ₱5</label>
+                        <input type="checkbox" id="bacon" name="extras" value="bacon" checked>
+                        <label for="bacon">Bacon - ₱20</label>
+                        <br>
+                        <br>
+                        <label for="buns">Choice of buns: </label>
+                        <br>
+                        <input type="radio" name="bun" id="white-bun" checked>
+                        <label for="white-bun">White Bun - ₱10</label>
                         <input type="radio" name="bun" id="wheat-bun">
-                        <label for="wheat-bun">Wheat Bun</label>
-                        <input type="radio" name="bun" id="honey oat">
-                        <label for="honey oat">Honey Oat</label>
-                        <input type="radio" name="bun" id="sugar-free">
-                        <label for="sugar-free">Sugar-Free</label>
-
-                    </td>
-                    
-                    <td colspan="2"><label for="pasta">Pasta: </label>
-                    
-                        <select name="pasta_sauce" id="pasta_sauce">
-                            <option value="carbo">Carbonara</option>
-                            <option value="pesto">Pesto</option>
-                            <option value="spaghetti">Spaghetti</option>
-                            <option value="extra-cheese">Extra Cheese</option>
-                            <option value="extra-sauce">Extra Sauce</option>
-                        </select>
-                    </td>
-                    
-                    
-                </tr>
-
-                <tr>
-                    
-                </tr>
-
-                <tr>
-                    
-                </tr>
-                <tr>
-                    <td colspan="2"><label for="fries">Fries: </label>
-
+                        <label for="wheat-bun">Wheat Bun - ₱15</label>
                         <br>
-                    
+                        <input type="radio" name="bun" id="honey oat">
+                        <label for="honey oat">Honey Oat - ₱20</label>
+                        <input type="radio" name="bun" id="sugar-free">
+                        <label for="sugar-free">Sugar-Free - ₱25</label>
+                    </td>
+
+                    <td colspan="2">
+                        <img src="f4e05b14e45d1fe5cd5612d667c3677f.png" alt="a burger" width="100px" height="100px">
+                        <label for="pasta">Pasta: </label>
+                        <br>
+                        <select name="pasta_sauce" id="pasta_sauce">
+                            <option value="carbo">Carbonara - ₱120</option>
+                            <option value="pesto">Pesto - ₱110</option>
+                            <option value="spaghetti">Spaghetti - ₱100</option>
+                            <option value="extra-cheese">Extra Cheese - ₱20</option>
+                            <option value="extra-sauce">Extra Sauce - ₱15</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" min="1" value="1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <img src="da5ea5c752cd6c206352faeb50c0eabf.png" alt="a burger" width="100px" height="100px">
+                        <label for="fries">Fries: </label>
+                        <br>
                         <input type="radio" name="fries" id="small">
-                        <label for="small">Small</label>
+                        <label for="small">Small - ₱30</label>
                         <input type="radio" name="fries" id="medium">
-                        <label for="medium">Medium</label>
-                        <input type="radio" name="fries" id="large">
-                        <label for="large">Large</label>
-                        
+                        <label for="medium">Medium - ₱50</label>
+                        <input type="radio" name="fries" id="large" checked>
+                        <label for="large">Large - ₱70</label>
                         <br>
                         <br>
                         <label for="flavor">Flavor: </label>
                         <br>
-                        <input type="checkbox" id="bbq" name="extras">
-                        <label for="bbq">Barbeque</label>
-                        <input type="checkbox" id="cheese" name="extras">
-                        <label for="cheese">Cheese</label>
-                        <input type="checkbox" id="sour_cream" name="extras">
-                        <label for="sour_cream">Sour Cream</label>
+                        <input type="checkbox" id="bbq" name="extras" checked>
+                        <label for="bbq">Barbeque - ₱10</label>
+                        <input type="checkbox" id="cheese" name="extras" checked>
+                        <label for="cheese">Cheese - ₱10</label>
+                        <input type="checkbox" id="sour_cream" name="extras" checked>
+                        <label for="sour_cream">Sour Cream - ₱10</label>
+                        <br>
+                        <br>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" min="1" value="1" placeholder="Quantity">
                     </td>
 
-                    
+                    <td colspan="2">
+                        <img src="23c4e6327b232aee1ffb2d74605a43e8.png" alt="a burger" width="160px" height="100px">
+                        <label for="pasta">Drinks: </label>
+                        <br>
+                        <select name="pasta_sauce" id="pasta_sauce">
+                            <option value="coke">Coke - ₱20</option>
+                            <option value="sprite">Sprite - ₱20</option>
+                            <option value="water">Water - ₱10</option>
+                            <option value="iced-tea">Iced Tea - ₱25</option>
+                            <option value="juice">Juice - ₱30</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="size">Size: </label>
+                        <br>
+                        <input type="radio" name="fries" id="small">
+                        <label for="small">Small - ₱10</label>
+                        <input type="radio" name="fries" id="medium" checked>
+                        <label for="medium">Medium - ₱15</label>
+                        <input type="radio" name="fries" id="large">
+                        <label for="large">Large - ₱20</label>
+                    </td>
                 </tr>
 
                 <tr>
-                    
+                    <th colspan="4">
+                        Feedback
+                    </th>
                 </tr>
-
-                <tr>
-                    <td><label for="quantity">Quantity:</label></td>
-                    <td><input type="text" size="3" maxlength="10" placeholder="Quantity"></td>
-                </tr>
-
-                
 
                 <tr>
                     <td colspan="4" style="text-align: center; vertical-align: middle;">
-                        <button type="submit">Submit Order</button>
-                        <button type="reset">Clear Form</button>
+                        <textarea class="text" name="desc" id="description" rows="5" cols="90" maxlength="50"
+                            placeholder="Your feedback is important to us."></textarea>
                     </td>
-                    
                 </tr>
 
+                <tr>
+                    <th colspan="4">
+                        Delivery
+                    </th>
+                </tr>
+
+                <tr>
+                    <td colspan="4" style="text-align: center;">
+                        <label><input type="radio" name="delivery_option" value="delivery">Delivery</label>
+                        <label><input type="radio" name="delivery_option" value="pickup">Pick-up</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" style="text-align: right; vertical-align: middle;">
+                        <button class="submit" type="submit">Submit Order</button>
+                        <button type="reset">Clear Form</button>
+                    </td>
+                </tr>
 
             </tbody>
         </form>
