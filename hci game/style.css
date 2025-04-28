@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f0e3; /* Light beige background */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-title {
+    color: #5cb85c; /* Green title */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.timer {
+    font-size: 1.2em;
+    color: #d9534f; /* Red timer */
+    margin-bottom: 15px;
+}
+
+.game-board {
+    display: flex;
+    gap: 90px;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item, .shadow-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.item img, .shadow-item img {
+    width: 80px;
+    height: auto;
+}
+
+.connector-dot, .connector-dot-shadow {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f0ad4e; /* Orange dots */
+    cursor: grab;
+    position: absolute;
+}
+
+.connector-dot {
+    right: -20px;
+}
+
+.connector-dot-shadow {
+    left: -20px;
+}
+
+.dragging {
+    opacity: 0.7;
+    border: 2px dashed #007bff; /* Blue border when dragging */
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #0056b3;
+}
+
+.connector-dot {
+    background-color: #f0ad4e; /* Orange when not matched */
+    margin: 0 20px;
+}
+.matched .connector-dot, .matched .connector-dot-shadow {
+    background-color: #5cb85c; /* Green when matched */
+}
+
+/* Basic styling for the connecting line */
+.line {
+    position: absolute;
+    border-bottom: 3px solid #007bff; /* Blue line */
+    z-index: -1; /* Behind the dots */
+}

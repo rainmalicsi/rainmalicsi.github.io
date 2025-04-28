@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Match It!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="game-title">Eye Match It!</h1>
+        <div class="timer">Time: <span id="time">15</span> seconds</div>
+        <div class="game-board">
+            <div class="left-side">
+                <div class="item" draggable="false" data-item="eggplant">
+                    <img src="corn.png" alt="Eggplant">
+                    <div class="connector-dot" data-target="eggplant-shadow"></div>
+                </div>
+                <div class="item" draggable="false" data-item="corn">
+                    <img src="corn.png" alt="Corn">
+                    <div class="connector-dot" data-target="corn-shadow"></div>
+                </div>
+                <div class="item" draggable="false" data-item="broccoli">
+                    <img src="corn.png" alt="Broccoli">
+                    <div class="connector-dot" data-target="broccoli-shadow"></div>
+                </div>
+                <div class="item" draggable="false" data-item="banana">
+                    <img src="corn.png" alt="Banana">
+                    <div class="connector-dot" data-target="banana-shadow"></div>
+                </div>
+                <div class="item" draggable="false" data-item="grapes">
+                    <img src="corn.png" alt="Grapes">
+                    <div class="connector-dot" data-target="grapes-shadow"></div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="shadow-item" data-shadow="broccoli-shadow" data-matched="">
+                    <div class="connector-dot-shadow" data-connects-to="broccoli"></div>
+                    <img src="grape.png" alt="Broccoli Shadow">
+                </div>
+                <div class="shadow-item" data-shadow="banana-shadow" data-matched="">
+                    <div class="connector-dot-shadow" data-connects-to="banana"></div>
+                    <img src="grape.png" alt="Banana Shadow">
+                </div>
+                <div class="shadow-item" data-shadow="grapes-shadow" data-matched="">
+                    <div class="connector-dot-shadow" data-connects-to="grapes"></div>
+                    <img src="grape.png" alt="Grapes Shadow">
+                </div>
+                <div class="shadow-item" data-shadow="corn-shadow" data-matched="">
+                    <div class="connector-dot-shadow" data-connects-to="corn"></div>
+                    <img src="grape.png" alt="Corn Shadow">
+                </div>
+                <div class="shadow-item" data-shadow="eggplant-shadow" data-matched="">
+                    <div class="connector-dot-shadow" data-connects-to="eggplant"></div>
+                    <img src="grape.png" alt="Eggplant Shadow">
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="reset-button">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
