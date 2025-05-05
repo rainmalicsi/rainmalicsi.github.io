@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Breakpoints</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+        .col-md-4, .col-md-6, .col-md-8, .col-md-3, .col-md-12, .col-md-2, .col-md-7 {
+            height: 100px;
+            border: 1px dashed black;   
+            font-family: Tahoma, Geneva, Verdana, sans-serif; 
+            font-size: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        body {
+            background-color: red;
+        }
+
+        @media (min-width: 576px) {
+            body {
+                background: blue;
+            }
+            
+        }
+
+        @media (min-width: 768px) {
+            body {
+                background: green;
+            }
+            
+        }
+
+        @media (min-width: 992px) {
+            body {
+                background: yellow;
+            }
+            
+        }
+
+        @media (min-width: 1200px) {
+            body {
+                background: purple;
+            }
+            
+        }
+
+        @media (min-width: 1400px) {
+            body {
+                background: orange;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <!-- header -->
+
+    <header class="row">
+        <div class="col-md-12 bg-secondary"><br>HEADER</div>
+    </header>
+
+    <!-- 2nd row -->
+    <div class="row">
+        <br><br>
+        <div class="col-md-offset-4 col-md-4 bg-warning"><br>1/3 <br>Offset</div>
+        <div class="col-md-4 bg-success"><br>1/3</div>
+        <div class="col-md-4 bg-success"><br>1/3</div>
+    </div>
+
+    <!-- 3rd row -->
+    <div class="row">   
+        <div class="col-md-4 bg-info" style="height: 200px;"><br><br><br>1/3</div>
+        <div class="col-md-8 bg-danger" style="height: 200px;"><br><br><br>2/3</div>
+    </div>
+    
+    <!-- 4th row -->
+    <div class="row">
+        <div class="col-md-3 bg-warning"><br>1/4</div>
+        <div class="col-md-6 bg-success"><br>1/2</div>
+        <div class="col-md-3 bg-warning"><br>1/4</div>
+    </div>
+
+    <!-- 5th row -->
+    <div class="row">
+        <div class="col-md-3 bg-success"><br>1/4</div>
+        <div class="col-md-3 bg-danger"><br>1/4</div>
+        <div class="col-md-3 bg-warning"><br>1/4</div>
+        <div class="col-md-3 bg-info"><br>1/4</div>
+    </div>
+
+    <!-- 6th row -->
+    <div class="row">
+        <div class="col-md-3 bg-success"><br>1/4</div>
+        <div class="col-md-6 bg-danger">
+            <div class="row">
+                <div class="col-md-6 bg-info"><br>1/4</div>
+                <div class="col-md-6 bg-info"><br>1/4</div>
+            </div>
+        </div>
+        <div class="col-md-3 bg-warning"><br>1/4</div>
+    </div>
+
+    <!-- 7th row -->
+     <footer class="row">
+        <div class="col-md-2 bg-success"><br>1/6</div>
+        <div class="col-md-7 bg-danger"><br>7/12</div>
+        <div class="col-md-3 bg-warning"><br>1/4</div>
+     </footer>
+</body>
+</html>
