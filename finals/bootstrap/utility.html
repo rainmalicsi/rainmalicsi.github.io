@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+    span {
+        width: 200px; 
+        height: 200px;
+        display: inline-block;
+    }
+
+    .border-top-0 {
+        color: black;
+    }
+    </style>
+
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">-->
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+   
+    <div class="container">
+        <h1 class="display-2">TASK #1</h1>
+        <h1 class="display-6 d-none d-sm-block">Hidden when viewport is xs</h1>
+        <h1 class="display-6 d-none d-md-block">Hidden when viewport is s</h1>
+        <h1 class="display-6 d-none d-lg-block">Hidden when viewport is md</h1>
+        <h1 class="display-6 d-none d-xl-block">Hidden when viewport is lg</h1>
+
+        <h1 class="bg-primary text-white d-inline">This is a regular span (INLINE)</h1>
+        <h1 class="bg-primary text-white d-inline">This is a regular span (INLINE)</h1>
+        <h1 class="bg-primary text-white d-inline">This is a regular span (INLINE)</h1>
+
+        <span class="bg-info text-white d-block">This is a BLOCK span</span>
+        <span class="bg-info text-white d-block">This is a BLOCK span</span>
+        <span class="bg-info text-white d-block">This is a BLOCK span</span>
+    </div>
+
+    <div class="container">
+        <h1 class="display-2">TASK #2</h1>
+        <span class="d-inline d-sm-none text-danger"><strong>This is an Inline Display in EXTRA SMALL Viewport only.</strong></span>
+        <span class="d-none d-sm-inline d-md-none text-warning"><strong>This is an Inline Display in SMALL Viewport only.</strong></span>
+        <span class="d-none d-md-inline d-lg-none text-success"><strong>This is an Inline Display in MEDIUM Viewport only.</strong></span>
+        <span class="d-none d-lg-inline d-xl-none text-info"><strong>This is an Inline Display in LARGE Viewport only.</strong></span>
+        <span class="d-none d-xl-inline d-xxl-none text-primary"><strong>This is an Inline Display in EXTRA LARGE Viewport only.</strong></span>
+        <span class="d-none d-xxl-inline text-dark"><strong>This is an Inline Display in EXTRA2X LARGE Viewport only.</strong></span>
+    </div>
+
+    <div class="container">
+        <h1 class="display-2">TASK #3</h1>
+        <span class="border border-primary text-primary px-5 py-5 mt-5 mx-3">Border on all sides</span>
+        <span class="border-start border-suuccess text-success px-5 py-5 mt-5 mx-3">Border on the left side</span>
+        <span class="border-end border-info text-info px-5 py-5 mt-5 mx-3">Border on the right side</span>
+        <span class="border-bottom border-warning text-warning px-5 py-5 mt-5 mx-3">Border on the bottom</span>
+        <span class="border-start bottom-end border-danger text-danger px-5 py-5 mt-5 mx-3">Border on the left and right</span>
+    </div>
+
+    <div class="container">
+        <h1 class="display-2">TASK #4</h1>
+        <span class="border border-0 border-primary border-3 text-primary px-5 py-5 mt-5 mx-3">No Border</span>
+        <span class="border border-top-0 border-success border-3 text-success px-5 py-5 mt-5 mx-3">No top border</span>
+        <span class="border border-end-0 border-info border-3 text-info px-5 py-5 mt-5 mx-3">No right side border</span>
+        <span class="border border-bottom-0 border-warning border-3 text-warning px-5 py-5 mt-5 mx-3">No bottom border</span>
+        <span class="border border-start-0 border-danger border-3 text-danger px-3 py-3 mt-3 mx-1">No left border</span>
+    </div>
+
+    <div class="container">
+        <h1 class="display-2">TASK #5</h1>
+        
+        <span class="border border-1 border-primary rounded text-light bg-primary"><br><br><br>This is rounded</span> 
+        <span class="border border-2 border-secondary rounded-top text-light  bg-secondary"><br><br><br>This is rounded top</span> 
+        <span class="border border-3 border-success rounded-end text-light bg-success"><br><br><br>This is rounded end</span> 
+        <span class="border border-4 border-danger rounded-bottom text-light bg-danger"><br><br><br>This is rounded at the bottom</span> 
+        <span class="border border-5 border-warning rounded-start text-light bg-warning"><br><br><br>This is rounded at the start</span> 
+        <span class="border border-5 border-info rounded-circle text-light bg-info"><br><br><br>This is a rounded circle</span> 
+        <span class="border border-4 border-light rounded-pill text-light bg-light"><br><br><br>This is a rounded pill</span> 
+        </div>
+
+    <div class="container">
+        <br>
+        <h1 class="display-2">TASK #6</h1>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div> 
+        <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div> 
+        <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div> 
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+    </div>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>-->
+  </body>
+</html>
